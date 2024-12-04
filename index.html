@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALICKI WEB FINANÇAS</title>
+    <link rel="icon" href="img/g.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header><img src="img/g.png" alt="" class="logo-img">
+        <h1 class="logo-text">GALICKI <br> WEB FINANÇAS</h1>
+    </header>
+    <div class="container">
+        <h1>Cadastro Financeiro</h1>
+
+        <form id="formcadastro">
+
+            <label for="nome">Nome/Descrição: </label>
+
+            <input type="text" id="nome" required> <br>
+
+            <select id="categoria" name="categoria">
+
+                <option value="receita">Receita</option>
+                <option value="despesas">Despesas</option>
+
+            </select> <br>
+
+            <label for="data">Data: </label>
+
+            <input type="date" id="data" name="data"> <br>
+
+            <label for="valor">Valor:</label>
+
+            <input type="text" id="valor" name="valor">
+            <br>
+            <button type="submit">Cadastrar</button>
+
+            <h2>Listagem Financeira</h2>
+            <ul id="output"></ul>
+            <h2>Resumo Financeiro</h2>
+            <div id="resumo">
+                
+                <p>Total de Receitas: <span id="totalReceitas"></span>
+                </p>
+                <p>Total de Despesas: <span id="totalDespesas"></span></p>
+                <p>Saldo Final: <span id="saldoFinal"></span></p>
+
+            </div>
+
+
+            <script type="text/javascript" src="js/script.js"></script>
+
+        </form>
+</body>
+
+</html>
